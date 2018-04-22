@@ -325,3 +325,10 @@ BEGIN
     WHERE alumno = pAlumno;
 END ACTUALIZABECADO;
  
+ALTER TABLE curso ADD creditos NUMBER(2,1) DEFAULT 0;
+UPDATE curso SET creditos=4 WHERE curso = 'ADM301';
+UPDATE curso SET creditos=4.5 WHERE curso = 'ADM322';
+UPDATE curso SET creditos=4.5 WHERE curso = 'CON231';
+UPDATE curso SET creditos=3 WHERE curso = 'DER251';
+UPDATE curso SET creditos=3 WHERE curso = 'ECO325';
+ 
